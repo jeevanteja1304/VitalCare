@@ -14,7 +14,7 @@ let monitoringInterval;
 let faceDetectionInterval;
 const MONITORING_DURATION = 20000; // 20 seconds
 // IMPORTANT: Make sure this URL matches your running Python backend
-const BACKEND_URL = 'http://127.0.0.1:5000/process';
+const BACKEND_URL = 'https://vitalcare-i3og.onrender.com/process';
 
 // --- Face Detection Setup ---
 async function loadFaceApiModels() {
@@ -133,17 +133,17 @@ function displayResults(results) {
         {
             title: 'Heart Rate',
             value: `${results.heartRate} bpm`,
-            icon: '<i class="fa-solid fa-heart-pulse"></i>',
+            icon: '<i class=\"fa-solid fa-heart-pulse\"></i>',
         },
         {
             title: 'Blood Pressure',
             value: `${results.systolic}/${results.diastolic} mmHg`,
-            icon: '<i class="fa-solid fa-droplet"></i>',
+            icon: '<i class=\"fa-solid fa-droplet\"></i>',
         },
         {
             title: 'Stress Level',
             value: results.stress,
-            icon: '<i class="fa-solid fa-brain"></i>',
+            icon: '<i class=\"fa-solid fa-brain\"></i>',
         }
     ];
 
