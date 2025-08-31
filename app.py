@@ -50,8 +50,8 @@ except Exception as e:
 
 # --- Static File Serving ---
 @app.route('/')
-def redirect_to_login():
-    return redirect('/login.html')
+def redirect_to_home():
+    return redirect('/home.html')
 
 @app.route('/login.html')
 def serve_login():
